@@ -3,9 +3,7 @@
 Este proyecto desarrolla un modelo de base de datos MongoDB para gestionar un torneo deportivo. El objetivo es almacenar y consultar datos de deportistas, equipos, árbitros, partidos y resultados.
 
 ## Contenido del repositorio
-- **`requerimientos/`:** Documento PDF con las reglas y requerimientos del torneo.
 - **`database/`:** Diseño de la base de datos, datos iniciales y diagrama.
-- **`video/`:** Video explicativo del proyecto.
 - **`scripts/`:** Ejemplos de consultas útiles para interactuar con la base de datos.
 
 ## Cómo usar este repositorio
@@ -20,4 +18,4 @@ Este proyecto desarrolla un modelo de base de datos MongoDB para gestionar un to
    - Usa las consultas del archivo `consultas_ejemplo.js` en la carpeta `scripts/`.
 
 ## Autor(es)
-- Nombre del equipo o integrantes.
+- Alec Niño
