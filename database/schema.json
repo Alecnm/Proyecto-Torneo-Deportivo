@@ -1,0 +1,46 @@
+{
+    "participants": {
+      "description": "Información de jugadores, entrenadores y árbitros.",
+      "fields": {
+        "_id": "ObjectId",
+        "name": "string",
+        "role": "string (player|coach|referee)",
+        "team_id": "ObjectId",
+        "stats": {
+          "goals": "number",
+          "yellow_cards": "number",
+          "red_cards": "number"
+        },
+        "experience": "string (solo para coach y referee)"
+      }
+    },
+    "teams": {
+      "description": "Datos de los equipos participantes.",
+      "fields": {
+        "_id": "ObjectId",
+        "name": "string",
+        "coach_id": "ObjectId",
+        "players": "array of ObjectIds",
+        "matches_played": "number",
+        "points": "number",
+        "goal_difference": "number"
+      }
+    },
+    "matches": {
+      "description": "Registro de partidos del torneo.",
+      "fields": {
+        "_id": "ObjectId",
+        "team1_id": "ObjectId",
+        "team2_id": "ObjectId",
+        "date": "ISODate",
+        "location": "string",
+        "referee_id": "ObjectId",
+        "result": {
+          "team1_score": "number",
+          "team2_score": "number"
+        },
+        "events": "array of event objects"
+      }
+    }
+  }
+  
