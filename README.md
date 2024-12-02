@@ -2,6 +2,7 @@
 
 Este proyecto desarrolla un modelo de base de datos MongoDB para gestionar un torneo deportivo. El objetivo es almacenar y consultar datos de deportistas, equipos, árbitros, partidos y resultados.
 
+
 ## Contenido del repositorio
 - **`database/`:** Diseño de la base de datos, datos iniciales y diagrama.
 - **`scripts/`:** Ejemplos de consultas útiles para interactuar con la base de datos.
@@ -16,6 +17,9 @@ Este proyecto desarrolla un modelo de base de datos MongoDB para gestionar un to
 
 3. **Consultar datos:**
    - Usa las consultas del archivo `consultas_ejemplo.js` en la carpeta `scripts/`.
+
+## **Configuración del Entorno de Replicación**
+Sigue las instrucciones detalladas en [`database/replication_setup.md`](./database/replication_setup.md) para configurar el entorno de replicación en MongoDB.
 
 ## Autor(es)
 - Alec Niño
