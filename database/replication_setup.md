@@ -57,3 +57,21 @@ Este documento explica cómo configurar un *replica set* en MongoDB para garanti
 ## **Notas Adicionales**
 - Asegúrate de que los puertos utilizados (27017, 27018, 27019) estén disponibles.
 - En caso de errores, revisa que los directorios tengan permisos de escritura.
+
+
+## Configuración de Sharding en MongoDB
+
+1. **Habilitar sharding en la base de datos**:
+   Conéctate al router `mongos` y ejecuta:
+   ```javascript
+   sh.enableSharding("tournament");
+2. **Crear índice en la colección matches**:
+   ```javascript
+   db.matches.createIndex({ team1_id: 1, team2_id: 1 });
+3. **Configurar particionamiento**:
+   ```javascript
+   sh.shardCollection("tournament.matches", { team1_id: 1 });
+4. **Verificar estado del sharding**:
+   ```javascript
+   sh.status();
+

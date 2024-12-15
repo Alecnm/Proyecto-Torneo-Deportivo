@@ -1,17 +1,3 @@
-// Inicializar Replica Set
-rs.initiate({
-  _id: "rs0",
-  members: [
-    { _id: 0, host: "localhost:27017" },
-    { _id: 1, host: "localhost:27018" },
-    { _id: 2, host: "localhost:27019", arbiterOnly: true }
-  ]
-});
-  
-// Verificar Estado
-rs.status();
-
-
 // Habilitar sharding en la base de datos
 sh.enableSharding("tournament");
 
@@ -23,4 +9,3 @@ sh.shardCollection("tournament.matches", { team1_id: 1 });
 
 // Verificar el estado del sharding
 sh.status();
-  

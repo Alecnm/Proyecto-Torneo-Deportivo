@@ -21,5 +21,9 @@ Este proyecto desarrolla un modelo de base de datos MongoDB para gestionar un to
 ## **Configuración del Entorno de Replicación**
 Sigue las instrucciones detalladas en [`database/replication_setup.md`](./database/replication_setup.md) para configurar el entorno de replicación en MongoDB.
 
+### Configuración de Sharding
+Para habilitar el sharding en la colección `matches`, ejecuta los comandos proporcionados en el archivo `replication_commands.js` o sigue las instrucciones en `replication_setup.md`.
+
+
 ## Autor(es)
 - Alec Niño
